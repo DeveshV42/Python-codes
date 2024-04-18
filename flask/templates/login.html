@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body style="background-color:powderblue;">
+        <img src="C:\Users\Devesh sharma\Desktop\python\flask\templates\welcome.jpg" alt="welcome" style="width:800px;height:400px;">
+        <div class="header">
+            <h1>Login page !</h1>
+          </div> 
+          <style>
+            h1 {text-align: center;}
+            </style>    
+        <form action="http://localhost:5000/formlogin" method="post">
+            <table>
+                <tr><td>Userame</td>
+                <td><input type="text" name="uname"></td></tr>
+                <tr><td>Password</td>
+                <td><input type="password" name="pass"></td></tr>  
+                <tr><td><input type="submit"></td></tr>
+            </table>
+        </form>
+    </body>
+</html>

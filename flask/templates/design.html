@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container w3-teal">
+  <h1 class="w3-xxxlarge w3-animate-bottom">Software infotech</h1>
+</div>
+  <div class="w3-bar w3-black">
+    <a href="#" class="w3-bar-item w3-button">Company</a>
+    <a href="#" class="w3-bar-item w3-button">Solutions</a>
+    <a href="#" class="w3-bar-item w3-button">Development</a>
+</div>
+
+<div class="w3-display-container">
+<img src="C:\Users\Devesh sharma\Desktop\python\flask\templates\1812875.jpg" alt="Car" style="width:150%">
+<div class="w3-display-topmiddle w3-container"><h2><b>Sign-up<b></b></h2>
+<form class="w3-container">
+  <p>
+  <label>First Name</label>
+  <input class="w3-input" type="text"></p>
+  <p>
+  <label>Last Name</label>
+  <input class="w3-input" type="text"></p>
+  <p>
+  <label>Email</label>
+  <input class="w3-input" type="text"></p>
+  <p>
+    <label>Password</label>
+    <input class="w3-input" type="text"></p>
+    <p>
+      <label>Confirm Password</label>
+      <input class="w3-input" type="text"></p>
+      <p>      
+        <button class="w3-btn w3-blue">Sign up</button></p>
+      </form>
+</form>
+</div>
+
+<div class="w3-container w3-red">
+  <p>Contact us</p>
+  <p>91+ 7505749896</p>
+  <p>deveshvashishtha424@gmail.com</p>
+</div>
+
+<?php
+$con=mysqli_connect('localhost','root','','record');
+  if(isset($_POST['Sign up']))
+  {
+    $FirstName=$_POST['FirstName'];
+    $LastName=$_POST['LastName'];
+    $Email=$_POST['Email'];
+    $Password=$_POST['Password'];
+    $ConfirmPassword=$_POST['ConfirmPassword'];
+
+    $query="insert into register(First Name,Last Name ,Email,Password,Confirm Password) values ('$FirstName','$LastName','$Email','$Password','$ConfirmPassword')";
+    $run=mysqli_connect($con,$query);
+  }
+  ?>
+
+
+</body>
+</html> 
+

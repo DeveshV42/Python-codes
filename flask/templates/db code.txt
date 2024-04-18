@@ -1,0 +1,6 @@
+INSERT INTO
+    buyers(id,bname,email,pname,pcolor,pcategory)
+VALUES
+    ('2','harsh','harsh@gmail.com', 'redbull','black','male'),
+    ('3','vaibhav','vaibhav@gmail.com', 'pitbull','white','male'),
+    ('4','chirag','chirag@gmail.com', 'vodafone','white','male');
